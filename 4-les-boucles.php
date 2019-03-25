@@ -1,83 +1,27 @@
 <?php
 
-// Exemple 1
-$age = 29;
+// While - Tant que
+echo "While - Tant que : <br/><br/>";
 
-if($age < 30)
+$nombre_de_lignes = 1;
+
+while ($nombre_de_lignes <= 100)
 {
-    echo "C'est bon tu es encore jeune";
-}
-else
-{
-    echo "Salut, le vieux ! ";
+    echo 'Ligne ' . $nombre_de_lignes . '<br />';
+    $nombre_de_lignes++;
 }
 
 echo "<br/><br/>";
 
-// Exemple 2
-if($age < 28)
+
+
+
+// For
+echo "For : <br/><br/>";
+
+for ($nombre_de_lignes = 1; $nombre_de_lignes <= 100; $nombre_de_lignes++)
 {
-    echo "C'est bon tu es encore jeune";
-
-} elseif($age >= 28 && $age <= 32 ) {
-    echo "Limite";
-
-} else {
-    echo "Salut, le vieux ! ";
-
+    echo 'Ligne ' . $nombre_de_lignes . '<br />';
 }
 
 echo "<br/><br/>";
-
-// Les conditions multiples
-$pays = "France";
-
-if( $pays == "France" OR $pays == "Belgique" )
-{
-    echo "Bienvenue !";
-
-}
-elseif ($pays == "England" OR $pays == "United States")
-{
-    echo "Welcome !";
-
-}
-
-echo "<br/><br/>";
-
-// Les bouléens
-$acces = false;
-
-if($acces) { // $acces == true
-    echo "Bienvenue";
-}else{
-    echo "Accès refusé";
-}
-
-// Switch
-$note = 16;
-switch ($note) // on indique sur quelle variable on travaille
-{
-    case 0:
-        echo "Nul";
-        break;
-
-    case 2:
-        echo "Médiocre";
-        break;
-
-    case 6:
-        echo "Assez bien";
-        break;
-
-    case 8:
-        echo "Bien";
-        break;
-
-    case 10:
-        echo "Très bien";
-        break;    
-
-    default:
-        echo "Désolé, je n'ai pas de message à afficher pour cette note ";
-}
