@@ -64,7 +64,7 @@ echo "<br/><br/>";
 // Switch
 echo "Le Switch : <br/><br/>";
 
-$note = 16;
+$note = 10;
 switch ($note) // on indique sur quelle variable on travaille
 {
     case 0:
