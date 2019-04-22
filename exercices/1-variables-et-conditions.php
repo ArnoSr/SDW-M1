@@ -10,17 +10,13 @@
 $resultat = "";
 
 $heure = 0; // 0 - 1 - 2 - .... 13 - 14 - 15 - ... 24
-$sexe = ""; // f - h 
+$sexe = "h"; // f - h
 
 
 // Script
-
-
-
-
 if($heure >= 0 && $heure < 12){
     $resultat = "Bon matin ";
-}elseif($heure >= 12 && $heure < 18){
+}elseif($heure > 12 && $heure < 18){
     $resultat = "Bon après-midi ";
 }else{
     $resultat = "Bonne soirée ";
@@ -31,10 +27,5 @@ if($sexe == "h"){
 }else{
     $resultat .= " Madame";
 }
-
-echo $resultat;
-
-
-
 
 echo $resultat;
