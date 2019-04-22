@@ -28,3 +28,13 @@ $nombre = 5;
 $calcul = 10 * $nombre;
 
 echo $calcul;
+
+
+$monInt = 10;
+$monString = "une phrase";
+
+
+
+
+
+

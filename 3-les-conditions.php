@@ -90,3 +90,23 @@ switch ($note) // on indique sur quelle variable on travaille
     default:
         echo "Désolé, je n'ai pas de message à afficher pour cette note ";
 }
+
+
+
+
+// Les conditions multiples
+echo "Les conditions multiples : <br/><br/>";
+$pays = "Belgique";
+$langue = "fr"; // nl
+
+// Utilisation de AND
+if( $pays == "Belgique" AND $langue == "fr" ) // si mon pays est la Belgique et que je parle fr
+{
+    echo "Bienvenue !";
+
+}
+elseif ( $pays == "Belgique" AND $langue == "nl" ) // si mon pays est la Belgique et que je parle nl
+{
+    echo "welkom";
+
+}

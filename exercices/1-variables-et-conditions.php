@@ -18,4 +18,23 @@ $sexe = ""; // f - h
 
 
 
+if($heure >= 0 && $heure < 12){
+    $resultat = "Bon matin ";
+}elseif($heure >= 12 && $heure < 18){
+    $resultat = "Bon après-midi ";
+}else{
+    $resultat = "Bonne soirée ";
+}
+
+if($sexe == "h"){
+    $resultat .= " Monsieur";
+}else{
+    $resultat .= " Madame";
+}
+
+echo $resultat;
+
+
+
+
 echo $resultat;
